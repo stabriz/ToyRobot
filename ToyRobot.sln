@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToyRobot.Main", "ConsoleApp1\ToyRobot.Main.csproj", "{D9A7616A-BA3B-498D-831C-887A430AD2EB}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToyRobot.NUnitTest", "ToyRobot.NUnitTest\ToyRobot.NUnitTest.csproj", "{65F93BDD-E870-4D7A-9254-47581445B6FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToyRobot.NUnitTest", "ToyRobot.NUnitTest\ToyRobot.NUnitTest.csproj", "{65F93BDD-E870-4D7A-9254-47581445B6FD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{F63DC341-8C04-415C-921E-D7CCC320C25A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToyRobot", "ToyRobot\ToyRobot.csproj", "{37FE6A5C-4590-4DD4-9FDF-D3730195E92E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToyRobot.Main", "ToyRobot.Main\ToyRobot.Main.csproj", "{D9A7616A-BA3B-498D-831C-887A430AD2EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D9A7616A-BA3B-498D-831C-887A430AD2EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D9A7616A-BA3B-498D-831C-887A430AD2EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D9A7616A-BA3B-498D-831C-887A430AD2EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D9A7616A-BA3B-498D-831C-887A430AD2EB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{65F93BDD-E870-4D7A-9254-47581445B6FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{65F93BDD-E870-4D7A-9254-47581445B6FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65F93BDD-E870-4D7A-9254-47581445B6FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -29,6 +25,10 @@ Global
 		{37FE6A5C-4590-4DD4-9FDF-D3730195E92E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37FE6A5C-4590-4DD4-9FDF-D3730195E92E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37FE6A5C-4590-4DD4-9FDF-D3730195E92E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9A7616A-BA3B-498D-831C-887A430AD2EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9A7616A-BA3B-498D-831C-887A430AD2EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9A7616A-BA3B-498D-831C-887A430AD2EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9A7616A-BA3B-498D-831C-887A430AD2EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
