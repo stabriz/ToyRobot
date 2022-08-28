@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToyRobot.Main", "ConsoleApp1\ToyRobot.Main.csproj", "{D9A7616A-BA3B-498D-831C-887A430AD2EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToyRobot.NUnitTest", "ToyRobot.NUnitTest\ToyRobot.NUnitTest.csproj", "{65F93BDD-E870-4D7A-9254-47581445B6FD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{F63DC341-8C04-415C-921E-D7CCC320C25A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToyRobot", "ToyRobot\ToyRobot.csproj", "{37FE6A5C-4590-4DD4-9FDF-D3730195E92E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9A7616A-BA3B-498D-831C-887A430AD2EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9A7616A-BA3B-498D-831C-887A430AD2EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9A7616A-BA3B-498D-831C-887A430AD2EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9A7616A-BA3B-498D-831C-887A430AD2EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65F93BDD-E870-4D7A-9254-47581445B6FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65F93BDD-E870-4D7A-9254-47581445B6FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65F93BDD-E870-4D7A-9254-47581445B6FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65F93BDD-E870-4D7A-9254-47581445B6FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37FE6A5C-4590-4DD4-9FDF-D3730195E92E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37FE6A5C-4590-4DD4-9FDF-D3730195E92E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37FE6A5C-4590-4DD4-9FDF-D3730195E92E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37FE6A5C-4590-4DD4-9FDF-D3730195E92E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{37FE6A5C-4590-4DD4-9FDF-D3730195E92E} = {F63DC341-8C04-415C-921E-D7CCC320C25A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4FAAA8BB-A7E4-4498-8D92-83B1D12D3C7A}
+	EndGlobalSection
+EndGlobal
