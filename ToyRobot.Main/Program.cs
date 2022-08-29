@@ -1,28 +1,34 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ToyRobot.Main
 {
     internal class Program
     {
+
         static void Main(string[] args)
         {
+            Simulator simulator = new Simulator(6, 6);
             var _stop = false;
-            while(!_stop)
+            try
             {
-                var command = Console.ReadLine();
-                
-                if (command.ToLower() == "exit")
+                while (!_stop)
                 {
-                    _stop = true;
+                    Console.Write("> ");
+                    var command = Console.ReadLine();
+
+                    if (command.ToLower() == "exit")
+                    {
+                        _stop = true;
+                    }
+                    else
+                    {
+                        simulator.ProcessCommands(command);
+                    }
                 }
-                else
-                {
-                   
-                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
             }
         }
     }

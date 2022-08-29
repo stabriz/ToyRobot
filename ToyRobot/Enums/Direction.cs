@@ -3,9 +3,9 @@ namespace ToyRobot.Enums
 {
     public enum Direction
     {
-        North,
-        East,
-        South,
-        West
+        NORTH,
+        EAST,
+        SOUTH,
+        WEST
     }
 }

@@ -41,9 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interface\IRobot.cs" />
-    <Compile Include="Interface\ITable.cs" />
-    <Compile Include="Interface\ISimulator.cs" />
     <Compile Include="Robot.cs" />
     <Compile Include="Simulator.cs" />
     <Compile Include="Table.cs" />

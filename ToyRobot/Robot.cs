@@ -1,57 +1,63 @@
-﻿using System;
-using ToyRobot.Enums;
-using ToyRobot.Interface;
+﻿using ToyRobot.Enums;
+
 namespace ToyRobot
 {
-    public class Robot : IRobot
+    public class Robot
     {
-        private Position _position;
-        private Direction _direction;
+        public Position Position { get; private set; }
+        public Direction Direction { get; private set; }
 
         public void Place(Position position, Direction direction)
         {
-            _position = position;  
-            _direction = direction;
+            Position = position;
+            Direction = direction;
         }
 
         public void Place(Position position)
         {
-            _position = position;
+            Position = position;
         }
 
+
         public void Move()
-        {            
-            switch (_direction)
+        {
+            Position = TryMove();
+        }
+
+        public Position TryMove()
+        {
+            Position nextPosition = new Position(Position);
+            switch (Direction)
             {
-                case Direction.North: 
-                    _position.X +=1; 
+                case Direction.NORTH:
+                    nextPosition.Y += 1;
                     break;
-                case Direction.South:
-                    _position.X -=1; 
+                case Direction.SOUTH:
+                    nextPosition.Y -= 1;
                     break;
-                case Direction.East:
-                    _position.Y +=1 ;
+                case Direction.EAST:
+                    nextPosition.X += 1;
                     break;
-                case Direction.West:
-                    _position.Y -= 1;
+                case Direction.WEST:
+                    nextPosition.X -= 1;
                     break;
             }
-
+            return nextPosition;
         }
 
         public void TurnRight()
         {
-            _direction = (Direction)(((int)_direction + 1) % 4);
+            Direction = (Direction)(((int)Direction + 1) % 4);
         }
 
         public void TurnLeft()
         {
-            _direction = (_direction == Direction.North) ? Direction.East : (Direction)((int)_direction - 1);
+            Direction = (Direction == Direction.NORTH) ? Direction.WEST : (Direction)((int)Direction - 1);
         }
 
         public string Report()
         {
-            return $"Output: {_position.X},{_position.Y},{_direction.ToString().ToUpper()}";
+            return $"Output: {Position.X},{Position.Y},{Direction}";
         }
 
 
