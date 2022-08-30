@@ -5,36 +5,36 @@ namespace ToyRobot.NUnitTest
 {
     public class RobotBasicTest
     {
-        Robot robot;
+        Robot _robot;
 
         [SetUp]
         public void Setup()
         {
-            robot = new Robot();
+            _robot = new Robot();
             Position position = new Position(0, 0);
-            robot.Place(position, Direction.NORTH);
+            _robot.Place(position, Direction.NORTH);
         }
 
         [Test]
 
         public void TestPlace()
         {
-            Assert.AreEqual(robot.Report(), @"Output: 0,0,NORTH");
+            Assert.AreEqual(_robot.Report(), @"Output: 0,0,NORTH");
         }
 
         [Test]
         public void TestMoveFacingNorth()
         {
-            robot.Move();
-            Assert.AreEqual(robot.Report(), @"Output: 0,1,NORTH");
+            _robot.Move();
+            Assert.AreEqual(_robot.Report(), @"Output: 0,1,NORTH");
         }
 
         [Test]
         public void TestMoveTwiceFacingNORTH()
         {
-            robot.Move();
-            robot.Move();
-            Assert.AreEqual(robot.Report(), @"Output: 0,2,NORTH");
+            _robot.Move();
+            _robot.Move();
+            Assert.AreEqual(_robot.Report(), @"Output: 0,2,NORTH");
         }
 
 
@@ -42,35 +42,35 @@ namespace ToyRobot.NUnitTest
         [Test]
         public void TestTurnLeft()
         {
-            robot.TurnLeft();
-            Assert.AreEqual(robot.Report(), @"Output: 0,0,WEST");
+            _robot.TurnLeft();
+            Assert.AreEqual(_robot.Report(), @"Output: 0,0,WEST");
         }
         
 
         [Test]
         public void TestTurnRight()
         {
-            robot.TurnRight();
-            Assert.AreEqual(robot.Report(), @"Output: 0,0,EAST");
+            _robot.TurnRight();
+            Assert.AreEqual(_robot.Report(), @"Output: 0,0,EAST");
         }
         [Test]
         public void TestTurnRightFourTime()
         {
-            robot.TurnRight();
-            robot.TurnRight();
-            robot.TurnRight();
-            robot.TurnRight();
-            Assert.AreEqual(robot.Report(), @"Output: 0,0,NORTH");
+            _robot.TurnRight();
+            _robot.TurnRight();
+            _robot.TurnRight();
+            _robot.TurnRight();
+            Assert.AreEqual(_robot.Report(), @"Output: 0,0,NORTH");
         }
         [Test]
         public void TestTurnLeftFiveTime()
         {
-            robot.TurnLeft();
-            robot.TurnLeft();
-            robot.TurnLeft();
-            robot.TurnLeft();
-            robot.TurnLeft();
-            Assert.AreEqual(robot.Report(), @"Output: 0,0,WEST");
+            _robot.TurnLeft();
+            _robot.TurnLeft();
+            _robot.TurnLeft();
+            _robot.TurnLeft();
+            _robot.TurnLeft();
+            Assert.AreEqual(_robot.Report(), @"Output: 0,0,WEST");
         }
     }
 }

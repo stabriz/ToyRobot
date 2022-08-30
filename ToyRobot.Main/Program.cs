@@ -7,7 +7,8 @@ namespace ToyRobot.Main
 
         static void Main(string[] args)
         {
-            Simulator simulator = new Simulator(6, 6);
+            //create the simulator with the table size
+            Simulator simulator = new Simulator(6, 6); 
             var _stop = false;
             try
             {
