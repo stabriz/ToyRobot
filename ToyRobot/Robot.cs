@@ -59,8 +59,5 @@ namespace ToyRobot
         {
             return $"Output: {Position.X},{Position.Y},{Direction}";
         }
-
-
-
     }
 }

@@ -8,16 +8,17 @@ namespace ToyRobot.Main
         static void Main(string[] args)
         {
             //create the simulator with the table size
-            Simulator simulator = new Simulator(6, 6); 
+            Simulator simulator = new Simulator(6, 6);
             var _stop = false;
-            try
+
+            while (!_stop)
             {
-                while (!_stop)
+                try
                 {
                     Console.Write("> ");
                     var command = Console.ReadLine();
 
-                    if (command.ToLower() == "exit")
+                    if (command.ToLower().Equals("exit"))
                     {
                         _stop = true;
                     }
@@ -26,10 +27,10 @@ namespace ToyRobot.Main
                         simulator.ProcessCommands(command);
                     }
                 }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.ToString());
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.ToString());
+                }
             }
         }
     }

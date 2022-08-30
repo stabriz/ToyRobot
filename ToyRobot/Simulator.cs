@@ -55,12 +55,13 @@ namespace ToyRobot
                         if (placeParameters.Length>2 && placeParameters[2]!=null)
                         {
                             Direction _direction;
-                            if (!Enum.TryParse(placeParameters[2], out _direction))
-                                throw new ArgumentException("Place parameter: unable to parse direction");
-
-
-                            _robot.Place(position, _direction);
-                            _robotPlacced = true;
+                            if (Enum.TryParse(placeParameters[2],false, out _direction) && 
+                                Enum.IsDefined(typeof(Direction),placeParameters[2]))
+                            {
+                                _robot.Place(position, _direction);
+                                _robotPlacced = true;
+                            }
+                            else throw new ArgumentException("Place parameter: unable to parse direction");
                         }
                         else
                         {
